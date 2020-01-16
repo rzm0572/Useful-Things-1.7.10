@@ -1,22 +1,20 @@
-package com.github.rzm0572.useful.proxies;
+package com.github.rzm0572.useful.proxy;
 
+import com.github.rzm0572.useful.item.ItemLoader;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy extends CommonProxy {
-    @Override
+public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
-        super.preInit(event);
+        ItemLoader.registerItems();
     }
 
-    @Override
     public void init(FMLInitializationEvent event) {
-        super.init(event);
+        // TODO
     }
 
-    @Override
     public void postInit(FMLPostInitializationEvent event) {
-        super.postInit(event);
+        // TODO
     }
 }

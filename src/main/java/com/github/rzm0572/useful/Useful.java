@@ -1,6 +1,6 @@
 package com.github.rzm0572.useful;
 
-import com.github.rzm0572.useful.proxies.CommonProxy;
+import com.github.rzm0572.useful.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -19,16 +19,16 @@ public class Useful {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        // TODO
+        proxy.preInit(event);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        // TODO
+        proxy.init(event);
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        // TODO
+        proxy.postInit(event);
     }
 }
